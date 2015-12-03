@@ -18,10 +18,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1KR-Tm-4S3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="175" id="HqZ-ox-JqF"/>
+                            <constraint firstItem="1KR-Tm-4S3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="155" id="N64-Ws-xwe"/>
+                            <constraint firstItem="1KR-Tm-4S3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pAQ-e1-TAH"/>
+                            <constraint firstItem="1KR-Tm-4S3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="shB-ac-A5K"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="redView" destination="1KR-Tm-4S3" id="Xr7-bj-hRK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="445" y="440"/>
         </scene>
     </scenes>
 </document>

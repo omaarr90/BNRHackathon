@@ -17,6 +17,7 @@
 		B8B366351C10DBF500781CBE /* SmartPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B366341C10DBF500781CBE /* SmartPinView.swift */; };
 		1D8D0D721C10D55200F3C75F /* OmarAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D0D711C10D55200F3C75F /* OmarAnimations.swift */; };
 		1D8D0D761C10E12A00F3C75F /* OmarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D0D751C10E12A00F3C75F /* OmarView.swift */; };
+		2B0404211C10D5DB0013F730 /* kaakatiAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0404201C10D5DB0013F730 /* kaakatiAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B8B366341C10DBF500781CBE /* SmartPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartPinView.swift; sourceTree = "<group>"; };
 		1D8D0D711C10D55200F3C75F /* OmarAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmarAnimations.swift; sourceTree = "<group>"; };
 		1D8D0D751C10E12A00F3C75F /* OmarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmarView.swift; sourceTree = "<group>"; };
+		2B0404201C10D5DB0013F730 /* kaakatiAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kaakatiAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1D8D0D431C10B68300F3C75F /* AppDelegate.swift */,
 				B8B366341C10DBF500781CBE /* SmartPinView.swift */,
 				1D8D0D451C10B68300F3C75F /* ViewController.swift */,
+				2B0404201C10D5DB0013F730 /* kaakatiAnimation.swift */,
 				1D8D0D471C10B68300F3C75F /* Main.storyboard */,
 				1D8D0D4A1C10B68300F3C75F /* Assets.xcassets */,
 				1D8D0D4C1C10B68300F3C75F /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			files = (
 				1D8D0D721C10D55200F3C75F /* OmarAnimations.swift in Sources */,
 				1D8D0D461C10B68300F3C75F /* ViewController.swift in Sources */,
+				2B0404211C10D5DB0013F730 /* kaakatiAnimation.swift in Sources */,
 				1D8D0D441C10B68300F3C75F /* AppDelegate.swift in Sources */,
 				B8B366351C10DBF500781CBE /* SmartPinView.swift in Sources */,
 				1D8D0D761C10E12A00F3C75F /* OmarView.swift in Sources */,
