@@ -20,6 +20,24 @@ class ViewController: UIViewController {
         
         _ = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "createView", userInfo: nil, repeats: true)
         
+        let sqaure = Sqaured(x: 100, y: 100, side: 100)
+        
+        omarView = OmarView(squared: sqaure)
+        
+        omarView.backgroundColor = UIColor.greenColor()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: "changeMe")
+        omarView.addGestureRecognizer(tapGesture)
+        
+        let pinchRecognizer = UIPinchGestureRecognizer(target: self, action: "pinched:")
+        omarView.addGestureRecognizer(pinchRecognizer)
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: "moveMe:")
+        omarView.addGestureRecognizer(panGesture)
+        
+        self.view.addSubview(omarView)
+
+        
     }
         
     func createView()
