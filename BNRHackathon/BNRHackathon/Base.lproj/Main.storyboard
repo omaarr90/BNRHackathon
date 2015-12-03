@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,23 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KR-Tm-4S3">
-                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="fanBase" highlightedImage="fanBase" translatesAutoresizingMaskIntoConstraints="NO" id="uYS-jE-eFc">
+                                <rect key="frame" x="50" y="50" width="500" height="500"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.81602076479999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="2SI-cw-8SK"/>
+                                    <constraint firstAttribute="height" constant="500" id="C3S-Eh-rnK"/>
+                                    <constraint firstAttribute="width" secondItem="uYS-jE-eFc" secondAttribute="height" multiplier="1:1" id="shK-Og-ABe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="fanBlades" translatesAutoresizingMaskIntoConstraints="NO" id="qFA-Ol-vtK">
+                                <rect key="frame" x="50" y="50" width="500" height="500"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qFA-Ol-vtK" secondAttribute="height" multiplier="1:1" id="Fbi-AM-lgw"/>
+                                    <constraint firstAttribute="width" constant="500" id="lqY-jB-gZ8"/>
+                                    <constraint firstAttribute="height" constant="500" id="r4m-Pm-z0x"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1KR-Tm-4S3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="175" id="HqZ-ox-JqF"/>
-                            <constraint firstItem="1KR-Tm-4S3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="155" id="N64-Ws-xwe"/>
-                            <constraint firstItem="1KR-Tm-4S3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pAQ-e1-TAH"/>
-                            <constraint firstItem="1KR-Tm-4S3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="shB-ac-A5K"/>
+                            <constraint firstAttribute="trailing" secondItem="uYS-jE-eFc" secondAttribute="trailing" constant="50" id="8Gx-T0-lHj"/>
+                            <constraint firstItem="qFA-Ol-vtK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Iiy-ng-jO1"/>
+                            <constraint firstItem="uYS-jE-eFc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="cC3-Hy-2Tx"/>
+                            <constraint firstAttribute="trailing" secondItem="qFA-Ol-vtK" secondAttribute="trailing" constant="50" id="iSX-ji-nFh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="redView" destination="1KR-Tm-4S3" id="Xr7-bj-hRK"/>
+                        <outlet property="fanBldesIMG" destination="qFA-Ol-vtK" id="cKz-fz-cjc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -41,4 +55,8 @@
             <point key="canvasLocation" x="445" y="440"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fanBase" width="200" height="200"/>
+        <image name="fanBlades" width="200" height="200"/>
+    </resources>
 </document>

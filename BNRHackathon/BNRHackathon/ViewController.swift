@@ -12,42 +12,44 @@ import UIKit
 
 extension UIView {
     
-    func rotate360Degrees(duration: CFTimeInterval = 120.0, completionDelegate: AnyObject? = nil) {
+    func rotate360Degrees(duration: CFTimeInterval = 2.0, completionDelegate: AnyObject? = nil) {
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0.0
-        rotateAnimation.toValue = CGFloat(M_PI * 500.0)
+        rotateAnimation.toValue = CGFloat(M_PI * -4.6)
         rotateAnimation.duration = duration
+        rotateAnimation.repeatCount = Float.infinity
         
         if let delegate: AnyObject = completionDelegate {
             rotateAnimation.delegate = delegate
         }
         self.layer.addAnimation(rotateAnimation, forKey: nil)
     }
-    
-    func positionMove(duration: CFTimeInterval = 10.0, completionDelegate: AnyObject? = nil) {
-        let positionAnimation = CABasicAnimation(keyPath: "position")
-        positionAnimation.toValue = NSValue(CGPoint: CGPointMake(layer.position.x, 0.0))
-        positionAnimation.duration = duration
-        
-        if let delegate: AnyObject = completionDelegate {
-            positionAnimation.delegate = delegate
-        }
-        self.layer.addAnimation(positionAnimation, forKey: nil)
-    }
-
-    
 }
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var redView: UIView!
+    @IBOutlet weak var fanBldesIMG: UIImageView!
+
+    let fanImage = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        redView.rotate360Degrees()
-        redView.positionMove()
+        //self.redView.backgroundColor = UIColor(patternImage: UIImage(named: "fanBase")!)
+
+        
+//        let fanBase = UIImage(named: "fanBase")
+//        fanImage.image = fanBase
+        
+        // self.redView.addSubview(fanImage)
+        
+        fanBldesIMG.rotate360Degrees()
+        
+        //redView.rotate360Degrees()
+        
+        //redView.positionMove()
         
     }
     
