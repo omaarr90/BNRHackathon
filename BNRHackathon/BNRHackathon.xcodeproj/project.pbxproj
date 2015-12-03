@@ -14,6 +14,7 @@
 		1D8D0D4E1C10B68300F3C75F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8D0D4C1C10B68300F3C75F /* LaunchScreen.storyboard */; };
 		1D8D0D591C10B68300F3C75F /* BNRHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D0D581C10B68300F3C75F /* BNRHackathonTests.swift */; };
 		1D8D0D641C10B68300F3C75F /* BNRHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D0D631C10B68300F3C75F /* BNRHackathonUITests.swift */; };
+		B8B366351C10DBF500781CBE /* SmartPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B366341C10DBF500781CBE /* SmartPinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1D8D0D5F1C10B68300F3C75F /* BNRHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BNRHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8D0D631C10B68300F3C75F /* BNRHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNRHackathonUITests.swift; sourceTree = "<group>"; };
 		1D8D0D651C10B68300F3C75F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B366341C10DBF500781CBE /* SmartPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartPinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				1D8D0D431C10B68300F3C75F /* AppDelegate.swift */,
+				B8B366341C10DBF500781CBE /* SmartPinView.swift */,
 				1D8D0D451C10B68300F3C75F /* ViewController.swift */,
 				1D8D0D471C10B68300F3C75F /* Main.storyboard */,
 				1D8D0D4A1C10B68300F3C75F /* Assets.xcassets */,
@@ -258,6 +261,7 @@
 			files = (
 				1D8D0D461C10B68300F3C75F /* ViewController.swift in Sources */,
 				1D8D0D441C10B68300F3C75F /* AppDelegate.swift in Sources */,
+				B8B366351C10DBF500781CBE /* SmartPinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				1D8D0D6A1C10B68300F3C75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D8D0D6B1C10B68300F3C75F /* Build configuration list for PBXNativeTarget "BNRHackathonTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				1D8D0D6D1C10B68300F3C75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D8D0D6E1C10B68300F3C75F /* Build configuration list for PBXNativeTarget "BNRHackathonUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				1D8D0D701C10B68300F3C75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
