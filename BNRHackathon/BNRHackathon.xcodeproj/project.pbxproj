@@ -14,6 +14,12 @@
 		1D8D0D4E1C10B68300F3C75F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8D0D4C1C10B68300F3C75F /* LaunchScreen.storyboard */; };
 		1D8D0D591C10B68300F3C75F /* BNRHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D0D581C10B68300F3C75F /* BNRHackathonTests.swift */; };
 		1D8D0D641C10B68300F3C75F /* BNRHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D0D631C10B68300F3C75F /* BNRHackathonUITests.swift */; };
+		B8B366351C10DBF500781CBE /* SmartPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B366341C10DBF500781CBE /* SmartPinView.swift */; };
+		1D8D0D721C10D55200F3C75F /* OmarAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D0D711C10D55200F3C75F /* OmarAnimations.swift */; };
+		1D8D0D761C10E12A00F3C75F /* OmarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8D0D751C10E12A00F3C75F /* OmarView.swift */; };
+		2B0404211C10D5DB0013F730 /* kaakatiAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0404201C10D5DB0013F730 /* kaakatiAnimation.swift */; };
+		2B1B3F5C1C10F68700EFC4F0 /* FireMachine.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2B1B3F5A1C10F68700EFC4F0 /* FireMachine.sks */; };
+		2B1B3F5D1C10F68700EFC4F0 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1B3F5B1C10F68700EFC4F0 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		1D8D0D5F1C10B68300F3C75F /* BNRHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BNRHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8D0D631C10B68300F3C75F /* BNRHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BNRHackathonUITests.swift; sourceTree = "<group>"; };
 		1D8D0D651C10B68300F3C75F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8B366341C10DBF500781CBE /* SmartPinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartPinView.swift; sourceTree = "<group>"; };
+		1D8D0D711C10D55200F3C75F /* OmarAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmarAnimations.swift; sourceTree = "<group>"; };
+		1D8D0D751C10E12A00F3C75F /* OmarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OmarView.swift; sourceTree = "<group>"; };
+		2B0404201C10D5DB0013F730 /* kaakatiAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = kaakatiAnimation.swift; sourceTree = "<group>"; };
+		2B1B3F5A1C10F68700EFC4F0 /* FireMachine.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireMachine.sks; sourceTree = "<group>"; };
+		2B1B3F5B1C10F68700EFC4F0 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,8 @@
 		1D8D0D371C10B68300F3C75F = {
 			isa = PBXGroup;
 			children = (
+				2B1B3F5A1C10F68700EFC4F0 /* FireMachine.sks */,
+				2B1B3F5B1C10F68700EFC4F0 /* spark.png */,
 				1D8D0D421C10B68300F3C75F /* BNRHackathon */,
 				1D8D0D571C10B68300F3C75F /* BNRHackathonTests */,
 				1D8D0D621C10B68300F3C75F /* BNRHackathonUITests */,
@@ -98,11 +112,14 @@
 			isa = PBXGroup;
 			children = (
 				1D8D0D431C10B68300F3C75F /* AppDelegate.swift */,
+				B8B366341C10DBF500781CBE /* SmartPinView.swift */,
 				1D8D0D451C10B68300F3C75F /* ViewController.swift */,
 				1D8D0D471C10B68300F3C75F /* Main.storyboard */,
 				1D8D0D4A1C10B68300F3C75F /* Assets.xcassets */,
 				1D8D0D4C1C10B68300F3C75F /* LaunchScreen.storyboard */,
 				1D8D0D4F1C10B68300F3C75F /* Info.plist */,
+				1D8D0D711C10D55200F3C75F /* OmarAnimations.swift */,
+				1D8D0D751C10E12A00F3C75F /* OmarView.swift */,
 			);
 			path = BNRHackathon;
 			sourceTree = "<group>";
@@ -193,6 +210,7 @@
 				TargetAttributes = {
 					1D8D0D3F1C10B68300F3C75F = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 3S846UE5F8;
 					};
 					1D8D0D531C10B68300F3C75F = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -229,9 +247,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1B3F5D1C10F68700EFC4F0 /* spark.png in Resources */,
 				1D8D0D4E1C10B68300F3C75F /* LaunchScreen.storyboard in Resources */,
+				2B1B3F5C1C10F68700EFC4F0 /* FireMachine.sks in Resources */,
 				1D8D0D4B1C10B68300F3C75F /* Assets.xcassets in Resources */,
 				1D8D0D491C10B68300F3C75F /* Main.storyboard in Resources */,
+				2B1B3F5F1C10F71300EFC4F0 /* Smoke.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8D0D721C10D55200F3C75F /* OmarAnimations.swift in Sources */,
 				1D8D0D461C10B68300F3C75F /* ViewController.swift in Sources */,
 				1D8D0D441C10B68300F3C75F /* AppDelegate.swift in Sources */,
+				B8B366351C10DBF500781CBE /* SmartPinView.swift in Sources */,
+				1D8D0D761C10E12A00F3C75F /* OmarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BNRHackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omaarr90.BNRHackathon;
@@ -408,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BNRHackathon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omaarr90.BNRHackathon;
@@ -482,6 +508,7 @@
 				1D8D0D6A1C10B68300F3C75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D8D0D6B1C10B68300F3C75F /* Build configuration list for PBXNativeTarget "BNRHackathonTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +517,7 @@
 				1D8D0D6D1C10B68300F3C75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D8D0D6E1C10B68300F3C75F /* Build configuration list for PBXNativeTarget "BNRHackathonUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +526,7 @@
 				1D8D0D701C10B68300F3C75F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
