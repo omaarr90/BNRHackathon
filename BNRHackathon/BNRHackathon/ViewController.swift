@@ -11,6 +11,7 @@ import UIKit
 extension UIView{
     
     func rotate360Degrees(duration: CFTimeInterval = 2.0, completionDelegate: AnyObject? = nil) {
+        
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
         rotateAnimation.fromValue = 0.0
         rotateAnimation.toValue = CGFloat(M_PI * -4.6)
@@ -25,19 +26,18 @@ extension UIView{
 }
 
 class ViewController: UIViewController {
-
+    
     var omarView: OmarView!
     
     @IBOutlet weak var redView: UIView!
     @IBOutlet weak var fanBldesIMG: UIImageView!
-
+    
     let fanImage = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let smartPinView = SmartPinView()
-        
+        fanBldesIMG.rotate360Degrees()
         
         _ = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "createView", userInfo: nil, repeats: true)
         
@@ -57,17 +57,17 @@ class ViewController: UIViewController {
         omarView.addGestureRecognizer(panGesture)
         
         self.view.addSubview(omarView)
-
+        
         
     }
-        
+    
     func createView()
     {
-
+        
         let smartView: UIView
         smartView = UIView.init(frame: CGRectMake(0, 0, 50, 50))
         smartView.backgroundColor = UIColor.greenColor()
-
+        
         
         let path = UIBezierPath()
         path.moveToPoint(CGPoint(x: 0,y:0))
@@ -89,41 +89,12 @@ class ViewController: UIViewController {
         // we add the animation to the squares 'layer' property
         smartView.layer.addAnimation(anim, forKey: "animate position along path")
         
-//        var single = UITapGestureRecognizer.init(target: self, action:Selector("handleSingleTap:"))
-//        smartView.userInteractionEnabled = true
-//        smartView.addGestureRecognizer(single)
-        
-//        UITapGestureRecognizer *singleFingerTap =
-//            [[UITapGestureRecognizer alloc] initWithTarget:self
-//                action:@selector(handleSingleTap:)];
-//        [self.view addGestureRecognizer:singleFingerTap];
-        
-//        [smartView addTarget:self action:@selector(myEvent:) forControlEvents:UIControlEventTouchDown];
-
         self.view .addSubview(smartView)
     }
-//        smartPin.view = self.view
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        //self.redView.backgroundColor = UIColor(patternImage: UIImage(named: "fanBase")!)
-
-        
-//        let fanBase = UIImage(named: "fanBase")
-//        fanImage.image = fanBase
-        
-        // self.redView.addSubview(fanImage)
-        
-        fanBldesIMG.rotate360Degrees()
-        
-        //redView.rotate360Degrees()
-        
-        //redView.positionMove()
-        
-
+    
     func handleSingleTap(sender: UIGestureRecognizer)
     {
-    sender.view?.superview?.backgroundColor = UIColor.yellowColor()
+        sender.view?.superview?.backgroundColor = UIColor.yellowColor()
         
     }
     
@@ -139,7 +110,7 @@ class ViewController: UIViewController {
     }
     
     func moveMe(recognizer: UIPanGestureRecognizer) {
-//        let center = recognizer.translationInView(recognizer.view)
+        //        let center = recognizer.translationInView(recognizer.view)
         let center = recognizer.locationInView(self.view)
         if recognizer.state == UIGestureRecognizerState.Began {
             return
@@ -147,28 +118,11 @@ class ViewController: UIViewController {
             self.omarView.moveMe(center)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-//    override func viewDidAppear(animated: Bool) {
-//        let omarAnimations = OmarAnimations()
-//        omarAnimations.animatedView = self.greenView
-//        omarAnimations.animationDuration = 2.0
-//        omarAnimations.animationDelay = 0.0
-//        omarAnimations.animationInitialSpringVelocity = 7.0
-//        omarAnimations.animationSpringDamping = 5.0
-//        omarAnimations.animationCompletion = nil
-//        omarAnimations.animationOptions = UIViewAnimationOptions.CurveEaseIn
-//        omarAnimations.theAnimations = {
-//            self.greenView.center.x += 50
-//        }
-//        
-//        omarAnimations.animateTheView()
-//    }
-
-
 }
 
