@@ -8,9 +8,7 @@
 
 import UIKit
 
-
-
-extension UIView {
+extension UIView{
     
     func rotate360Degrees(duration: CFTimeInterval = 2.0, completionDelegate: AnyObject? = nil) {
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
