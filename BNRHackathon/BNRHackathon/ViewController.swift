@@ -8,9 +8,7 @@
 
 import UIKit
 
-
-
-extension UIView {
+extension UIView{
     
     func rotate360Degrees(duration: CFTimeInterval = 2.0, completionDelegate: AnyObject? = nil) {
         let rotateAnimation = CABasicAnimation(keyPath: "transform.rotation")
@@ -36,23 +34,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //self.redView.backgroundColor = UIColor(patternImage: UIImage(named: "fanBase")!)
 
-        
-//        let fanBase = UIImage(named: "fanBase")
-//        fanImage.image = fanBase
-        
-        // self.redView.addSubview(fanImage)
-        
         fanBldesIMG.rotate360Degrees()
-        
-        //redView.rotate360Degrees()
-        
-        //redView.positionMove()
-        
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
